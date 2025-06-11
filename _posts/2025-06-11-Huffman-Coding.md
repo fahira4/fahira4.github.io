@@ -153,6 +153,7 @@ Kode Huffman:
 Teks Asli: FAHIRAFAHIRA
 Teks Terkompresi (bit): 0001101011110100011010111101
 
+```
 
 
 ## Kelebihan dan Kekurangan Huffman Coding

@@ -194,8 +194,9 @@ int main() {
     return 0;
 }
 
+```
 
-##Kesimpulan
+## Kesimpulan
 
 N-Queens Problem adalah masalah klasik yang menguji kemampuan kita dalam penalaran kombinatorik dan penerapan algoritma. Dengan menggunakan pendekatan *backtracking*, kita dapat secara sistematis mengeksplorasi semua kemungkinan penempatan ratu, memangkas cabang yang tidak valid, dan menemukan setiap konfigurasi yang memenuhi batasan.
 
