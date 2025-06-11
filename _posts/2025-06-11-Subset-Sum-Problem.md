@@ -140,9 +140,8 @@ int main() {
 
     return 0;
 }
-
 ```
-
+-----
 ***
 
 ### Aplikasi di Dunia Nyata

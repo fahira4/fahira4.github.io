@@ -123,7 +123,6 @@ int main() {
     dijkstra(graph, 0); // mulai dari node Rumah (indeks 0)
     return 0;
 }
-
 ```
 -----
 

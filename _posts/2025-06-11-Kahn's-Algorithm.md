@@ -123,8 +123,8 @@ int main() {
 Output:
 
 Urutan Topological: 4 5 2 3 1 0 
-
 ```
+-----
 
 ### Kelebihan dan Kekurangan
 
