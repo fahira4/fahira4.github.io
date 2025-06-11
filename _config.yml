@@ -26,20 +26,20 @@ description: >- # used by seo meta and the atom feed
 url: "https://fahira4.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: fahira4 # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: NurulFahirah8 # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Nurul Fakhira Amanah M.Adil
+  email: nurulfahirah4@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://x.com/NurulFahirah8 # change to your Twitter homepage
+    - https://github.com/fahira4 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -88,7 +88,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: darl # [light | dark]
+theme_mode: dark # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
@@ -98,7 +98,7 @@ theme_mode: darl # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:https://drive.google.com/file/d/1gDynSM-9OEMVNZGnDVaeEfpZif7ATTyI/view?usp=sharing
+avatar:https://drive.google.com/file/d/1gDynSM-9OEMVNZGnDVaeEfpZif7ATTyI/view?usp=sharing:
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
