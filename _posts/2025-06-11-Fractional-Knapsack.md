@@ -13,6 +13,7 @@ Dalam dunia nyata, kita sering dihadapkan pada situasi di mana kita harus memili
 Masalah inilah yang dijawab oleh **Fractional Knapsack Problem**.
 
 Berbeda dengan **0/1 Knapsack** di mana item hanya bisa diambil seluruhnya atau tidak sama sekali, pada **Fractional Knapsack** kita diizinkan mengambil sebagian dari suatu item. Ini membuat masalah bisa diselesaikan secara **greedy** (rakus) karena kita bisa memilih bagian terbaik dari item berdasarkan nilai per satuan berat (*value per weight*).
+
 ### Definisi
 
 **Fractional Knapsack** adalah varian dari masalah Knapsack di mana kita dapat mengambil **pecahan (fraksi)** dari suatu item, tidak hanya item secara keseluruhan. Ini berarti jika kita tidak bisa memasukkan seluruh item ke dalam knapsack karena kapasitas yang terbatas, kita bisa mengambil sebagian dari item tersebut untuk memaksimalkan nilai total.
@@ -67,7 +68,7 @@ Algoritma greedy untuk Fractional Knapsack bekerja sebagai berikut:
     * Jika seluruh item tidak dapat dimasukkan (berat item *>* sisa kapasitas knapsack), ambil **pecahan** dari item tersebut yang sesuai dengan sisa kapasitas knapsack. Tambahkan nilai pecahan tersebut ke total nilai, dan kapasitas knapsack menjadi nol. Hentikan proses.
 
 
-## ❓ Permasalahan
+## Permasalahan
 
 Seorang penjelajah memiliki ransel dengan kapasitas maksimum 50 kg. Ia memiliki sejumlah barang, masing-masing dengan berat dan nilai tertentu. Ia dapat mengambil **sebagian** dari sebuah barang jika seluruh barang tidak muat dalam ransel.
 
@@ -81,11 +82,11 @@ Bagaimana cara penjelajah memilih barang (atau sebagian barang) untuk dimasukkan
 
 ---
 
-## ✅ Solusi (Dengan Implementasi C++)
+## Solusi (Dengan Implementasi C++)
 
 Kita akan menggunakan algoritma **greedy**, yaitu selalu memilih barang dengan rasio nilai/berat tertinggi terlebih dahulu.
 
-### 💻 Kode C++
+### Kode C++
 
 ```cpp
 #include <iostream>
