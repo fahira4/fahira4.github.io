@@ -5,9 +5,6 @@ categories: [DESAIN ANALISIS ALGORITMA, BACKTRACKING ALGORITHM]
 tags: [daa, algorithm, backtracking]     # TAG names should always be lowercase
 ---
 
-![Desktop View](assets/images/POST/PERTEMUAN4/RatInMaze (1).webp){: width="500"}
-_---_
-
 HALO!, **Rat in a Maze** adalah sebuah masalah algoritma klasik di mana seekor tikus harus menemukan jalan dari titik awal ke titik tujuan di dalam sebuah labirin. Labirin itu sendiri direpresentasikan oleh sebuah grid atau matriks, dengan sel-sel yang bisa dilewati atau terhalang. Masalah ini adalah contoh penerapan dari **algoritma lacak-balik (backtracking)**. Pendekatan ini melibatkan tikus yang mencoba bergerak selangkah demi selangkah, dan jika jalur yang dipilih ternyata buntu atau salah, ia akan "mundur" (lacak-balik) ke posisi sebelumnya untuk mencoba arah yang berbeda.
 
 ***
