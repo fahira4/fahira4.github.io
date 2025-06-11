@@ -124,6 +124,7 @@ int main() {
     return 0;
 }
 
+```
 -----
 
 ### Contoh Penggunaan lain
