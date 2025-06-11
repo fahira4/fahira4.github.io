@@ -16,9 +16,9 @@ timezone:
 
 title: Nurul Fakhira Amanah M.Adil # the main title
 
-tagline: Hasanuddin University # it will display as the subtitle
+tagline: Hasanuddin University Information System Student of Hasanuddin University # it will display as the subtitle
 
-description: Information System Student of Hasanuddin University # used by seo meta and the atom feed
+description:  # used by seo meta and the atom feed
   
 
 # Fill in the protocol & hostname for your site.
