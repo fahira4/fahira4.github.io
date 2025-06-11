@@ -82,64 +82,44 @@ Bagaimana cara penjelajah memilih barang (atau sebagian barang) untuk dimasukkan
 
 ---
 
-## Solusi (Dengan Implementasi C++)
+## Solusi 
 
 Kita akan menggunakan algoritma **greedy**, yaitu selalu memilih barang dengan rasio nilai/berat tertinggi terlebih dahulu.
 
-### Kode C++
+- Langkah-Langkah Penyelesaian:
+1. Hitung rasio nilai per unit berat (value/weight)
+Untuk setiap item, kita hitung berapa nilai yang diberikan untuk setiap satuan beratnya. Ini karena kita ingin memaksimalkan nilai total yang bisa dimasukkan ke dalam knapsack.
 
-```cpp
-#include <iostream>
-#include <vector>
-#include <algorithm>
+2. Urutkan item berdasarkan rasio tersebut secara menurun (descending)
+Item dengan rasio tertinggi akan diprioritaskan, karena memberikan "nilai terbaik" per kilogram.
 
-using namespace std;
+3. Ambil item satu per satu dari yang paling bernilai
+Selama masih ada ruang di dalam knapsack:
+- ika berat item masih muat sepenuhnya, masukkan seluruh item.
+- Jika tidak muat, ambil sebagian item yang sesuai dengan sisa kapasitas dan tambahkan nilai proporsional.
 
-struct Item {
-    int value, weight;
+4. Proses berhenti ketika kapasitas knapsack habis.
 
-    // Rasio nilai per berat
-    double ratio() const {
-        return (double)value / weight;
-    }
-};
+- Contoh Singkat
+Misal:
 
-bool compare(Item a, Item b) {
-    return a.ratio() > b.ratio();
-}
+- Kapasitas knapsack: 50 kg
 
-double fractionalKnapsack(int capacity, vector<Item>& items) {
-    sort(items.begin(), items.end(), compare);
+- Item:
+1. Item A: nilai 60, berat 10 → rasio = 6
+2. Item B: nilai 100, berat 20 → rasio = 5
+3. Item C: nilai 120, berat 30 → rasio = 4
 
-    double totalValue = 0.0;
+- Langkah:
 
-    for (const auto& item : items) {
-        if (capacity == 0) break;
+1. Urutkan berdasarkan rasio → A (6), B (5), C (4)
+2. Masukkan seluruh A (10 kg, sisa 40 kg)
+3. Masukkan seluruh B (20 kg, sisa 20 kg)
+4. Masukkan sebagian C (20/30 dari berat → ambil 2/3 nilainya → 80)
 
-        if (item.weight <= capacity) {
-            // Ambil seluruh item
-            totalValue += item.value;
-            capacity -= item.weight;
-        } else {
-            // Ambil sebagian item
-            totalValue += item.ratio() * capacity;
-            capacity = 0;
-        }
-    }
+Total nilai:
+60 (A) + 100 (B) + 80 (C) = 240
 
-    return totalValue;
-}
-
-int main() {
-    int capacity = 50;
-    vector<Item> items = {{60, 10}, {100, 20}, {120, 30}};
-
-    double maxValue = fractionalKnapsack(capacity, items);
-    cout << "Total nilai maksimum yang bisa dibawa: " << maxValue << endl;
-
-    return 0;
-}
-```
 -----
 
 ### Kesimpulan
